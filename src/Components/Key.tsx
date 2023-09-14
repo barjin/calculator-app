@@ -11,6 +11,7 @@ export default function Key({ label, action }: { label: string, action?: () => v
             background: 'rgba(175,255,247,1)',
             cursor: action ? 'pointer' : 'auto'
         }}
+            data-key={label}
             onClick={action}
         >
             <div style={{ textAlign: 'center' }}>
